@@ -1,10 +1,13 @@
 /**
- * Copyright (C) 2024 Red Naga, LLC - Tim Strazzere <diff@protonmail.com>
+ * Copyright (C) 2024-2025 Red Naga, LLC - Tim Strazzere <diff@protonmail.com>
  *
  * Helper class for getting stack traces and backtraces while debugging with
  * Frida, primarily used for Android.
  *
  */
+
+import Java from 'frida-java-bridge';
+
 export class Stack {
     private threadObj!: Java.Wrapper<object>;
 
